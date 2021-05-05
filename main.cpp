@@ -4,7 +4,7 @@
 #include<string>
 using namespace std;
 
-#define sleep(n) Sleep(n * 1000)
+#define sleep(n) Sleep((n) * 1000)
 
 class Thread_info
 {
@@ -30,11 +30,11 @@ int main()
     HANDLE h_thread[20];
     Thread_info thread_info[20];
     //初始化同步对象
-    Rmutex = CreateMutex(NULL, FALSE, "mutex_for_readcount");
+    Rmutex = CreateMutex(nullptr, FALSE, "mutex_for_readcount");
     InitializeCriticalSection(&RW_mutex); //初始化临界区
     //读取输入文件
     fstream file;
-    file.open("data_1.txt", ios::in);
+    file.open(R"(D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\data_1.txt)", ios::in);
     if (!file)
     {
         cout << "error in open file ! " << endl;
@@ -48,16 +48,17 @@ int main()
         file >> thread_info[n_thread].persist;
         n_thread++;
     }
+    file.close();
     //创建线程
     for (int i = 0; i < n_thread; i++)
     {
         if(thread_info[i].role == 'R'||thread_info[i].role == 'r')
         {
-            h_thread[i] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)(ReaderThread), &thread_info[i], 0, &thread_ID);
+            h_thread[i] = CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)(ReaderThread), &thread_info[i], 0, &thread_ID);
         }
         else
         {
-            h_thread[i] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)(WriterThread), &thread_info[i], 0, &thread_ID);
+            h_thread[i] = CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)(WriterThread), &thread_info[i], 0, &thread_ID);
         }
     }
     //等待所有线程结束
