@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include<string>
+
 using namespace std;
 
 #define sleep(n) Sleep((n) * 1000)
@@ -15,8 +16,9 @@ public:
     double persist; //线程读写操作持续时间
 };
 
-void WriterThread(Thread_info & t);
-void ReaderThread(Thread_info & t);
+void WriterThread(Thread_info &t);
+
+void ReaderThread(Thread_info &t);
 
 int Read_count = 0;
 HANDLE Rmutex;             //RW_mutex;//局部临界资源
@@ -34,7 +36,7 @@ int main()
     InitializeCriticalSection(&RW_mutex); //初始化临界区
     //读取输入文件
     fstream file;
-    file.open(R"(D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\data_1.txt)", ios::in);
+    file.open(R"(C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\data_1.txt)", ios::in);
     if (!file)
     {
         cout << "error in open file ! " << endl;
@@ -52,13 +54,14 @@ int main()
     //创建线程
     for (int i = 0; i < n_thread; i++)
     {
-        if(thread_info[i].role == 'R'||thread_info[i].role == 'r')
+        if (thread_info[i].role == 'R' || thread_info[i].role == 'r')
         {
-            h_thread[i] = CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)(ReaderThread), &thread_info[i], 0, &thread_ID);
-        }
-        else
+            h_thread[i] = CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE) (ReaderThread), &thread_info[i], 0,
+                                       &thread_ID);
+        } else
         {
-            h_thread[i] = CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)(WriterThread), &thread_info[i], 0, &thread_ID);
+            h_thread[i] = CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE) (WriterThread), &thread_info[i], 0,
+                                       &thread_ID);
         }
     }
     //等待所有线程结束
@@ -67,7 +70,7 @@ int main()
     return 0;
 }
 
-void WriterThread(Thread_info & t)
+void WriterThread(Thread_info &t)
 {
     DWORD m_delay;
     DWORD m_persist;
@@ -88,7 +91,7 @@ void WriterThread(Thread_info & t)
     LeaveCriticalSection(&RW_mutex);//RealeaseMutex(RW_mutex);
 }
 
-void ReaderThread(Thread_info & t)
+void ReaderThread(Thread_info &t)
 {
     DWORD m_delay;
     DWORD m_persist;
@@ -101,7 +104,7 @@ void ReaderThread(Thread_info & t)
     cout << "Reader thread " << m_id << " snets the reading require ! " << endl;
     //等待互斥信号量，保证对readcount的互斥访问
     DWORD wait_for_mutex = WaitForSingleObject(Rmutex, -1);
-    if(Read_count == 0)
+    if (Read_count == 0)
     {
         EnterCriticalSection(&RW_mutex);//DWORD waits = WaitForSingleObject(RW_mutex, -1);
     }
@@ -114,7 +117,7 @@ void ReaderThread(Thread_info & t)
     //释放互斥信号量
     wait_for_mutex = WaitForSingleObject(Rmutex, -1);
     Read_count--;
-    if(Read_count==0)
+    if (Read_count == 0)
     {
         LeaveCriticalSection(&RW_mutex);//RealeaseMutex(RW_mutex);
     }

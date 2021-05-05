@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.19)
+project(Synchronization_and_Mutual_Exclusion_CLion)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(Synchronization_and_Mutual_Exclusion_CLion main.cpp)

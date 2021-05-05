@@ -33,3 +33,6 @@
 
 #vscode settings
 *.vscode
+
+#CLion settings
+.idea
