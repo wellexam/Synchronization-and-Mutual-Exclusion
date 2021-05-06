@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/VS-CODE/CPP/Synchronization-and-Mutual-Exclusion-CLion/main.cpp" "C:/VS-CODE/CPP/Synchronization-and-Mutual-Exclusion-CLion/cmake-build-debug/CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/main.cpp.obj"
+  "D:/VSCODE/CPP/Synchronization-and-Mutual-Exclusion/main.cpp" "D:/VSCODE/CPP/Synchronization-and-Mutual-Exclusion/cmake-build-debug/CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

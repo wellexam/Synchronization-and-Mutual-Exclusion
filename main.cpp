@@ -36,7 +36,7 @@ int main()
     InitializeCriticalSection(&RW_mutex); //初始化临界区
     //读取输入文件
     fstream file;
-    file.open(R"(C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\data_1.txt)", ios::in);
+    file.open(R"(.\data_1.txt)", ios::in);
     if (!file)
     {
         cout << "error in open file ! " << endl;

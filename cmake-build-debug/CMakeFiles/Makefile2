@@ -53,19 +53,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\Program Files\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\Program Files\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion
+CMAKE_SOURCE_DIR = D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\cmake-build-debug
+CMAKE_BINARY_DIR = D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -92,14 +92,14 @@ clean: CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/clean
 CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Synchronization_and_Mutual_Exclusion_CLion.dir\build.make CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Synchronization_and_Mutual_Exclusion_CLion.dir\build.make CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Synchronization_and_Mutual_Exclusion_CLion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Synchronization_and_Mutual_Exclusion_CLion"
 .PHONY : CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion\cmake-build-debug\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/rule
 
 # Convenience name for target.

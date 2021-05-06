@@ -52,19 +52,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\Program Files\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\Program Files\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion
+CMAKE_SOURCE_DIR = D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\cmake-build-debug
+CMAKE_BINARY_DIR = D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/depend.make
@@ -77,16 +77,16 @@ include CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/flags.make
 
 CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/main.cpp.obj: CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/flags.make
 CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/main.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Synchronization_and_Mutual_Exclusion_CLion.dir\main.cpp.obj -c C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/main.cpp.obj"
+	C:\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Synchronization_and_Mutual_Exclusion_CLion.dir\main.cpp.obj -c D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion\main.cpp
 
 CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/main.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\main.cpp > CMakeFiles\Synchronization_and_Mutual_Exclusion_CLion.dir\main.cpp.i
+	C:\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion\main.cpp > CMakeFiles\Synchronization_and_Mutual_Exclusion_CLion.dir\main.cpp.i
 
 CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/main.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\main.cpp -o CMakeFiles\Synchronization_and_Mutual_Exclusion_CLion.dir\main.cpp.s
+	C:\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion\main.cpp -o CMakeFiles\Synchronization_and_Mutual_Exclusion_CLion.dir\main.cpp.s
 
 # Object files for target Synchronization_and_Mutual_Exclusion_CLion
 Synchronization_and_Mutual_Exclusion_CLion_OBJECTS = \
@@ -100,7 +100,7 @@ Synchronization_and_Mutual_Exclusion_CLion.exe: CMakeFiles/Synchronization_and_M
 Synchronization_and_Mutual_Exclusion_CLion.exe: CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/linklibs.rsp
 Synchronization_and_Mutual_Exclusion_CLion.exe: CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/objects1.rsp
 Synchronization_and_Mutual_Exclusion_CLion.exe: CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Synchronization_and_Mutual_Exclusion_CLion.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Synchronization_and_Mutual_Exclusion_CLion.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Synchronization_and_Mutual_Exclusion_CLion.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -113,6 +113,6 @@ CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/clean:
 .PHONY : CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/clean
 
 CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\cmake-build-debug C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\cmake-build-debug C:\VS-CODE\CPP\Synchronization-and-Mutual-Exclusion-CLion\cmake-build-debug\CMakeFiles\Synchronization_and_Mutual_Exclusion_CLion.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion\cmake-build-debug D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion\cmake-build-debug D:\VSCODE\CPP\Synchronization-and-Mutual-Exclusion\cmake-build-debug\CMakeFiles\Synchronization_and_Mutual_Exclusion_CLion.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/depend
 
