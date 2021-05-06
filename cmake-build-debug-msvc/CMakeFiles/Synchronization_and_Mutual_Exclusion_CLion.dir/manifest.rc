@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/VS-CODE/CPP/Synchronization-and-Mutual-Exclusion/cmake-build-debug-msvc/CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir/embed.manifest"

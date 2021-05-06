@@ -1,0 +1,3 @@
+C:/VS-CODE/CPP/Synchronization-and-Mutual-Exclusion/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
+C:/VS-CODE/CPP/Synchronization-and-Mutual-Exclusion/cmake-build-debug-mingw/CMakeFiles/Synchronization_and_Mutual_Exclusion_CLion.dir
+C:/VS-CODE/CPP/Synchronization-and-Mutual-Exclusion/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir

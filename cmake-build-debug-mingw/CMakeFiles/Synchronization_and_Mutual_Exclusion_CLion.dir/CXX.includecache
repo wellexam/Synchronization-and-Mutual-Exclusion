@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/VS-CODE/CPP/Synchronization-and-Mutual-Exclusion/reader_writer.cpp
+Windows.h
+-
+fstream
+-
+string
+-
+iostream
+-
+

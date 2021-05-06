@@ -3,4 +3,4 @@ project(Synchronization_and_Mutual_Exclusion_CLion)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Synchronization_and_Mutual_Exclusion_CLion main.cpp)
+add_executable(Synchronization_and_Mutual_Exclusion_CLion reader_writer.cpp)
