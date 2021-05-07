@@ -36,3 +36,4 @@
 
 #CLion settings
 .idea
+/cmake-build-debug
